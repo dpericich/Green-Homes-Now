@@ -64,17 +64,17 @@ const ResultsContainer = ({ score }) => {
 
     // 2 Categories -> 1-3 score and 4-5 score
     const goodWorkText = () => {
-        return `You got a ${score}! Nice job, but you can always make a bigger impact. Check out more ways to fight climate change below!`
+        return `You scored a ${score}! Nice job, but you can always make a bigger impact. Check out more ways to fight climate change below!`
     }
     const needsImprovementText = () => {
-        return `You got a ${score}. You can make a bigger positive impact on saving the world. Check out more ways to fight climate change below!`
+        return `You scored a ${score}. You can make a bigger positive impact on saving the world. Check out more ways to fight climate change below!`
     }
     
     return(
         <Container>
             <CardTitle>Your Results</CardTitle>
             <CardText>{score > 3 ? goodWorkText() : needsImprovementText()}</CardText>
-            <Button onClick={() => setExpandCard(!expandCard)}>Reduce Your Footprint (+)</Button>
+            <Button onClick={() => setExpandCard(!expandCard)}>Reduce Your Footprint</Button>
             { expandCard && <MoreInfo /> } 
         </Container>
     )
