@@ -30,7 +30,7 @@ const QuizPage = ({ moveToResults }) => {
         background-color: var(--vivid-green);
         font-size: 1.7rem;
         color: white;
-        width: 10rem;
+        width: 14rem;
         text-align: center;
         padding: 1.5rem 0;
         border-radius: 5px;

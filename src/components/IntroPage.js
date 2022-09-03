@@ -44,7 +44,7 @@ const IntroPage = ({ moveToQuiz }) => {
         background-color: var(--vivid-green);
         font-size: 1.7rem;
         color: white;
-        width: 10rem;
+        width: 16rem;
         text-align: center;
         padding: 1.5rem 0;
         border-radius: 5px;
