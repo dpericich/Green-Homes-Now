@@ -6,12 +6,12 @@
 
 export const questions = [
     {
-        question: { text: "This is placeholder text", number: 1 },
+        question: { text: "When did you last change your AC's air filter?", number: 1 },
         answers: [
-            { text: "This is a example answer", value: 1 },
-            { text: "This is a example answer", value: 2 },
-            { text: "This is a example answer", value: 3 },
-            { text: "This is a example answer", value: 4 }
+            { text: "Within the last month", value: 4 },
+            { text: "2-3 months ago", value: 3 },
+            { text: "Within the last year", value: 2 },
+            { text: "Should I change be changing it?", value: 1 }
         ]
     },
     {
