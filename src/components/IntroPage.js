@@ -66,7 +66,7 @@ const IntroPage = ({ moveToQuiz }) => {
         <Container>
             <CallToActionTitle>Fight Climate Change from Home</CallToActionTitle>
             <CallToActionText>Our homes produce over one eighth of our national emissions. <span style={{fontWeight: "bold"}}>Take this quiz to determine how best to lower your home's footprint!</span></CallToActionText>
-            <CallToActionButton onClick={moveToQuiz}>Submit</CallToActionButton>
+            <CallToActionButton onClick={moveToQuiz}>Make a Change</CallToActionButton>
         </Container>
     )
 };

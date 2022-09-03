@@ -1,6 +1,6 @@
 # Green Homes Now
 
-_Who says we can't start fighting climate change from home?_
+_Who says we can't fight climate change from home?_
 
 ![Green Homes Now Logo](/public/green_homes_now_logo_2.png)
 
