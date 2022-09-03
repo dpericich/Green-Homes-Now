@@ -1,14 +1,15 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import IntroContainer from './components/IntroContainer';
+import Loading from './components/Loading';
 import QuizContainer from './components/QuizContainer';
 import ResultsContainer from './components/ResultsContainer';
 
 const App = () => {
   // State to conditionally render each part of the quiz process
-  const [loading, setLoading] = useState(false);
-  const [stage1, setStage1] = useState(true);
+  const [loading, setLoading] = useState(true);
+  const [stage1, setStage1] = useState(false);
   const [stage2, setStage2] = useState(false);
   const [stage3, setStage3] = useState(false);
 
@@ -19,6 +20,11 @@ const App = () => {
 
 
   // Methods to move through quiz
+  const moveToCallToAction = () => {
+    setLoading(false);
+    setStage1(true);
+  }
+
   const moveToQuiz = () => {
     setStage1(false);
     setStage2(true);
@@ -29,12 +35,16 @@ const App = () => {
     setStage3(true);
   }
 
+  useEffect(() => {
+    setTimeout(() => moveToCallToAction(), 375)
+  }, [])
+
   return (
 
     <div className="App">
       <Header />
       <div className="Body">
-        {/* Will have a component here for "Loading" which will be a flash of the message for 1 second each time the page refreshes */}
+        { loading && <Loading />}
         { stage1 && <IntroContainer moveToQuiz={moveToQuiz} /> }
         {/* QuizContainer is going to be ugly  */}
         { stage2 && <QuizContainer moveToResults={moveToResults} /> }
