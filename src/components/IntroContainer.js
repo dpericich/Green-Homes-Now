@@ -51,22 +51,21 @@ const IntroContainer = ({ moveToQuiz }) => {
         box-shadow: 3px 3px rgba(0,0,0, 0.15);
 
         &:active {
-            transform: translateY(2px);
-            transform: scale(0.98);
+            transform: translateY(10px);
         }
 
 
         &:hover {
             color: black;
             cursor: pointer;
+            transform: scale(0.98);
         }
     `
 
     return(
         <Container>
             <CallToActionTitle>Fight Climate Change from Home</CallToActionTitle>
-            {/* <CallToActionText>Our homes produce over one eight of our national greenhouse gas emissions. <span Style={{fontStyle: "bold"}}>Take this quiz to determine how best to lower your footprint!</span></CallToActionText> */}
-            <CallToActionText>Our homes produce over one eight of our national emissions. <span style={{fontWeight: "bold"}}>Take this quiz to determine how best to lower your footprint!</span></CallToActionText>
+            <CallToActionText>Our homes produce over one eighth of our national emissions. <span style={{fontWeight: "bold"}}>Take this quiz to determine how best to lower your home's footprint!</span></CallToActionText>
             <CallToActionButton onClick={moveToQuiz}>Submit</CallToActionButton>
         </Container>
     )
