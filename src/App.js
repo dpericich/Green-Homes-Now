@@ -17,6 +17,7 @@ const App = () => {
   // Do I want to just store the answers as useState values for each of these? 
   // Maybe I store a data-value on each question and depending on if it's true or false or multiple
   // choice then I can decide the value
+  const [score, setScore] = useState(2);
 
 
   // Methods to move through quiz
@@ -36,7 +37,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    setTimeout(() => moveToCallToAction(), 750)
+    setTimeout(() => moveToCallToAction(), 850)
   }, [])
 
   return (
@@ -48,7 +49,7 @@ const App = () => {
         { stage1 && <IntroPage moveToQuiz={moveToQuiz} /> }
         {/* QuizContainer is going to be ugly  */}
         { stage2 && <QuizPage moveToResults={moveToResults} /> }
-        { stage3 && <ResultsPage /> }
+        { stage3 && <ResultsPage score={score} /> }
       </div>
     </div>
   );
