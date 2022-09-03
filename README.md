@@ -1,6 +1,6 @@
 # Green Homes Now
 
-_Fighting Climate Change One Filter at a Time_
+_Who says we can't start fighting climate change from home?_
 
 ---
 
