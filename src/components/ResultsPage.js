@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { questionFeedback, cardSpreadTheWord, cardGetInvolved } from '../data/reviewText';
 
-const ResultsContainer = () => {
+const ResultsPage = () => {
     // I want to have different colors for each container
     // Maybe I'll end up custom creating each container, calling it here and passing in the data from my name
     return(
@@ -10,4 +10,4 @@ const ResultsContainer = () => {
     )
 };
 
-export default ResultsContainer;
+export default ResultsPage;

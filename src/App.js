@@ -4,7 +4,7 @@ import Header from './components/Header';
 import IntroContainer from './components/IntroContainer';
 import Loading from './components/Loading';
 import QuizContainer from './components/QuizContainer';
-import ResultsContainer from './components/ResultsContainer';
+import ResultsPage from './components/ResultsPage';
 
 const App = () => {
   // State to conditionally render each part of the quiz process
@@ -36,7 +36,7 @@ const App = () => {
   }
 
   useEffect(() => {
-    setTimeout(() => moveToCallToAction(), 375)
+    setTimeout(() => moveToCallToAction(), 750)
   }, [])
 
   return (
@@ -48,7 +48,7 @@ const App = () => {
         { stage1 && <IntroContainer moveToQuiz={moveToQuiz} /> }
         {/* QuizContainer is going to be ugly  */}
         { stage2 && <QuizContainer moveToResults={moveToResults} /> }
-        { stage3 && <ResultsContainer /> }
+        { stage3 && <ResultsPage /> }
       </div>
     </div>
   );
