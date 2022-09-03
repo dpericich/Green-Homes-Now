@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { cardGetInvolved } from '../data/reviewText'
+import MoreInfo from "./MoreInfo";
 
 const ActNowContainer = () => {
     const [expandCard, setExpandCard] = useState(false)
@@ -62,15 +62,12 @@ const ActNowContainer = () => {
         }
     `
 
-    const MoreInfo = styled.div`
-        color: red;
-    `
-
     return(
         <Container>
             <CardTitle>More Ways to Save the Planet</CardTitle>
             <CardText>Making a green house is only the start! Check out more ways to fight climate change and save the world!</CardText>
-            <Button>Act Now</Button>
+            <Button onClick={() => setExpandCard(!expandCard)}>Act Now</Button>
+            { expandCard && <MoreInfo /> } 
         </Container>
     )
 };

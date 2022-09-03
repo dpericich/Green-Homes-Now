@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { questionFeedback } from '../data/reviewText'
+import MoreInfo from "./MoreInfo";
 
 const ResultsContainer = ({ score }) => {
     const [expandCard, setExpandCard] = useState(false)
@@ -62,10 +62,6 @@ const ResultsContainer = ({ score }) => {
         }
     `
 
-    const MoreInfo = styled.div`
-        color: red;
-    `
-
     // 2 Categories -> 1-3 score and 4-5 score
     const goodWorkText = () => {
         return `You got a ${score}! Nice job, but you can always make a bigger impact. Check out more ways to fight climate change below!`
@@ -79,11 +75,7 @@ const ResultsContainer = ({ score }) => {
             <CardTitle>Your Results</CardTitle>
             <CardText>{score > 3 ? goodWorkText() : needsImprovementText()}</CardText>
             <Button onClick={() => setExpandCard(!expandCard)}>Reduce Your Footprint (+)</Button>
-            {/* Will break this into a separate component */}
-            {/* This will allow me to move the data to that component */}
-            { expandCard && <MoreInfo>
-                I am more info
-            </MoreInfo> } 
+            { expandCard && <MoreInfo /> } 
         </Container>
     )
 };

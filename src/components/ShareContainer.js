@@ -5,8 +5,6 @@ import { cardSpreadTheWord } from '../data/reviewText'
 const ShareContainer = () => {
     // Going to need a different color or image background
     // REALLY need to draw attention to this part
-    const [expandCard, setExpandCard] = useState(false)
-
     const Container = styled.div`
         display: flex;
         flex-direction: column;
@@ -62,10 +60,6 @@ const ShareContainer = () => {
             cursor: pointer;
             transform: scale(0.98);
         }
-    `
-
-    const MoreInfo = styled.div`
-        color: red;
     `
 
     // This needs to have a different color or something to immediately draw attention
