@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import QuestionChoice from '../components/QuestionChoice';
+import QuestionChoice from './QuestionChoice';
 import { questions } from '../data/questions';
 
-const QuizContainer = ({ moveToResults }) => {
+const QuizPage = ({ moveToResults }) => {
     const Container = styled.div`
         display: flex;
         flex-direction: column;
@@ -58,4 +58,4 @@ const QuizContainer = ({ moveToResults }) => {
     )
 };
 
-export default QuizContainer;
+export default QuizPage;

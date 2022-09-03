@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const IntroContainer = ({ moveToQuiz }) => {
+const IntroPage = ({ moveToQuiz }) => {
     const Container = styled.div`
         display: flex;
         flex-direction: column;
@@ -71,4 +71,4 @@ const IntroContainer = ({ moveToQuiz }) => {
     )
 };
 
-export default IntroContainer;
+export default IntroPage;

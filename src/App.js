@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Header from './components/Header';
-import IntroContainer from './components/IntroContainer';
+import IntroPage from './components/IntroPage';
 import Loading from './components/Loading';
-import QuizContainer from './components/QuizContainer';
+import QuizPage from './components/QuizPage';
 import ResultsPage from './components/ResultsPage';
 
 const App = () => {
@@ -45,9 +45,9 @@ const App = () => {
       <Header />
       <div className="Body">
         { loading && <Loading />}
-        { stage1 && <IntroContainer moveToQuiz={moveToQuiz} /> }
+        { stage1 && <IntroPage moveToQuiz={moveToQuiz} /> }
         {/* QuizContainer is going to be ugly  */}
-        { stage2 && <QuizContainer moveToResults={moveToResults} /> }
+        { stage2 && <QuizPage moveToResults={moveToResults} /> }
         { stage3 && <ResultsPage /> }
       </div>
     </div>
