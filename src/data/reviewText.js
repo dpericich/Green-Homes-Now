@@ -3,6 +3,7 @@
 // The naive expectation is that this will allow me to use a single card -> potentially not though
 
 // This one will be difficult as I will need to match / render based on the score and state of the quiz
+// My other option is just to have all of the questions shown and follow up text below
 export const questionFeedback = {
     1: {
         originalQuestion: "",
