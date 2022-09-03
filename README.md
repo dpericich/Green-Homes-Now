@@ -2,7 +2,7 @@
 
 _Who says we can't start fighting climate change from home?_
 
-![Green Homes Now Logo](/public/android-chrome-512x512.png)
+![Green Homes Now Logo](/public/green_homes_now_logo_2.png)
 
 ---
 
