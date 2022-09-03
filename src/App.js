@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import { styled } from 'styled-components'
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Will need a header */}
+      {/* Will need a CTA / Intro component */}
+      {/* Will need a quiz page component set */}
+      {/* Will need a quiz results component set */}
+      <h1>Green Homes Now</h1>
     </div>
   );
 }
