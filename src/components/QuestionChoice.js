@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const TrueFalseChoice = ({  }) => {
+const QuestionChoice = ({ question }) => {
     const Container = styled.div`
         display: flex;
         flex-direction: column;
@@ -9,7 +9,6 @@ const TrueFalseChoice = ({  }) => {
         justify-content: flex-start;
         padding: 1rem 0 4rem;
         margin: 2rem;
-        width: 60%;
         background-color: white;
         box-shadow: 6px 6px 14px rgba(38, 215, 128, .6);
         border-radius: 5px;
@@ -54,4 +53,4 @@ const TrueFalseChoice = ({  }) => {
     )
 };
 
-export default TrueFalseChoice;
+export default QuestionChoice;
