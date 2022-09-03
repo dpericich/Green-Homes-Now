@@ -3,14 +3,12 @@ import styled from "styled-components";
 import { cardSpreadTheWord } from '../data/reviewText'
 
 const ShareContainer = () => {
-    // Going to need a different color or image background
-    // REALLY need to draw attention to this part
     const Container = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        background-color: white;
+        background-color: var(--vivid-green);
         margin: 2rem;
         padding: 3rem 1.75rem;
         width: 70%;
@@ -33,17 +31,19 @@ const ShareContainer = () => {
 
     const CardTitle = styled.h3`
         font-size: 2.5rem;
+        color: white;
         margin: 0;
     `
 
     const CardText = styled.p`
         font-size: 1.5rem;
+        color: white;
     `
 
     const Button = styled.div`
-        background-color: var(--vivid-green);
+        background-color: white;
         font-size: 1.7rem;
-        color: white;
+        color: var(--vivid-green);
         width: 25rem;
         text-align: center;
         padding: 1.5rem 0;
@@ -62,11 +62,10 @@ const ShareContainer = () => {
         }
     `
 
-    // This needs to have a different color or something to immediately draw attention
     return(
         <Container>
             <CardTitle>Build a Team to Fight Climate Change!</CardTitle>
-            <CardText>We’re in this together. Share this link with your friends and family.</CardText>
+            <CardText>We’re in this together. Share this link with your friends and family so more people can impact change.</CardText>
             <Button>Button or 2 Buttons</Button>
         </Container>
     )
