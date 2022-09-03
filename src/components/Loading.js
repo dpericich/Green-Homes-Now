@@ -6,10 +6,20 @@ const Loading = () => {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 1rem;
+        margin: 2rem 0 1rem;
 
         @media screen and (max-width: 450px) {
             width: 80%;
+        }
+    `
+    
+    const Logo = styled.img`
+        width: 40rem;
+        height: 40rem;
+
+        @media screen and (max-width: 450px) {
+            width: 30rem;
+            height: 30rem;
         }
     `
 
@@ -19,9 +29,10 @@ const Loading = () => {
         margin: 0;
     `
 
+
     return(
         <LoadingContainer>
-            <img src="android-chrome-512x512.png" />
+            <Logo src="android-chrome-512x512.png" />
             <LoadingText>Loading...</LoadingText>
         </LoadingContainer>
     )
