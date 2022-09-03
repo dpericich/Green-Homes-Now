@@ -9,7 +9,6 @@ const ResultsPage = ({ score }) => {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: orangered;
         width: 60%;
 
         @media screen and (max-width: 1200px) {

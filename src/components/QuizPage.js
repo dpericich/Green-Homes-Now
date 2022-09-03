@@ -55,7 +55,6 @@ const QuizPage = ({ moveToResults }) => {
     `
     return(
         <Container>
-            {/* Need better copy here */}
             <QuizPageTitle>Make Your Home Green!</QuizPageTitle>
             {questions.map(question => (
                 <QuestionChoice question={question}></QuestionChoice>
