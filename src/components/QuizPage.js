@@ -9,15 +9,20 @@ const QuizPage = ({ moveToResults }) => {
         flex-direction: column;
         align-items: center;
         padding: 2rem;
-        width: 100vw;
+        width: 45%;
         margin: 2rem;
+
+        @media screen and (max-width: 1200px) {
+            width: 70%;
+        }
 
         @media screen and (max-width: 900px) {
             width: 70%;
         }
 
         @media screen and (max-width: 600px) {
-            width: 90%;
+            width: 100%;
+            margin: 1rem;
         }
     `
 
@@ -32,6 +37,7 @@ const QuizPage = ({ moveToResults }) => {
         color: white;
         width: 14rem;
         text-align: center;
+        margin-top: 1.3rem;
         padding: 1.5rem 0;
         border-radius: 5px;
         box-shadow: 3px 3px rgba(255,255,255, 0.6);
@@ -49,7 +55,8 @@ const QuizPage = ({ moveToResults }) => {
     `
     return(
         <Container>
-            <QuizPageTitle>Test Your Home Below!</QuizPageTitle>
+            {/* Need better copy here */}
+            <QuizPageTitle>Make Your Home Green!</QuizPageTitle>
             {questions.map(question => (
                 <QuestionChoice question={question}></QuestionChoice>
             ))}
