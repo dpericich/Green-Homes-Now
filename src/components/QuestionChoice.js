@@ -1,14 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const QuestionChoice = ({ question, questionSetters, questionIndex, selectedIndexValues, selectedIndexSetters }) => {
-    const [checked0, setChecked0] = useState(false);
-    const [checked1, setChecked1] = useState(false);
-    const [checked2, setChecked2] = useState(false);
-    const [checked3, setChecked3] = useState(false);
-
-    const checks = [checked0, checked1, checked2, checked3];
-    
     const Container = styled.div`
         display: flex;
         flex-direction: column;
@@ -51,13 +44,6 @@ const QuestionChoice = ({ question, questionSetters, questionIndex, selectedInde
     `
 
     const updateChecked = async (index, value) => {
-        // await setChecked0(false);
-        // await setChecked1(false);
-        // await setChecked2(false);
-        // await setChecked3(false);
-        const currentIndex = selectedIndexValues[questionIndex]
-        
-        // Create a new object of {0: } and pass into selectedIndexSetters
         const newIndexState = {
             0: index === 0 ? true : false,
             1: index === 1 ? true : false,
@@ -65,30 +51,6 @@ const QuestionChoice = ({ question, questionSetters, questionIndex, selectedInde
             3: index === 3 ? true : false,
         }
         await selectedIndexSetters[questionIndex](newIndexState);
-        // if (index === 0) {
-        //     await setChecked0(true);
-        //     await setChecked1(false);
-        //     await setChecked2(false);
-        //     await setChecked3(false);
-        // } else if (index === 1) {
-        //     await setChecked0(false);
-        //     await setChecked1(true);
-        //     await setChecked2(false);
-        //     await setChecked3(false);
-        // } else if (index === 2) {
-        //     await setChecked0(false);
-        //     await setChecked1(false);
-        //     await setChecked2(true);
-        //     await setChecked3(false);
-        // } else {
-        //     await setChecked0(false);
-        //     await setChecked1(false);
-        //     await setChecked2(false);
-        //     await setChecked3(true);
-        // };
-
-        // Call callback hook here to set the value for the App.js question state
-        // Something about calling this along with the 
         await questionSetters[questionIndex](value);
     }
 
