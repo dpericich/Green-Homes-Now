@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { cardSpreadTheWord } from '../data/reviewText'
 
 const ShareContainer = () => {
+    const quizLink = window.location.href;
+
     const Container = styled.div`
         display: flex;
         flex-direction: column;
@@ -66,8 +67,8 @@ const ShareContainer = () => {
     return(
         <Container>
             <CardTitle>Build a Team to Fight Climate Change!</CardTitle>
-            <CardText>We’re in this together. Share this link with your friends and family so more people can impact change.</CardText>
-            <Button>Button or 2 Buttons</Button>
+            <CardText>We’re in this together. Share this link with your friends and family so more people can make an impact.</CardText>
+            <Button onClick={() => {navigator.clipboard.writeText(quizLink)}}>Copy Link</Button>
         </Container>
     )
 };

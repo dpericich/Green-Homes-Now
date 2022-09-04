@@ -51,13 +51,6 @@ export const questionFeedback = [
     },
 ]
 
-// Have a card for sharing w/ friends and family
-export const cardSpreadTheWord = {
-    cardTitle: "",
-    text: "", 
-    links: []
-}
-
 // Have a card that links to other organizations
 export const cardGetInvolved = [
     {
