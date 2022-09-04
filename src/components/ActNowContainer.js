@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import MoreInfo from "./MoreInfo";
+import MoreActionInfo from "./MoreActionInfo";
+import { cardGetInvolved } from '../data/reviewText';
 
 const ActNowContainer = () => {
     const [expandCard, setExpandCard] = useState(false)
@@ -49,6 +50,7 @@ const ActNowContainer = () => {
         padding: 1.5rem 0;
         border-radius: 5px;
         box-shadow: 3px 3px rgba(0,0,0, 0.15);
+        margin-top: .9rem;
 
         &:active {
             transform: translateY(2px);
@@ -61,13 +63,26 @@ const ActNowContainer = () => {
             transform: scale(0.98);
         }
     `
+    
+    const Spacer = styled.div`
+        background-color: black;
+        width: 90%;
+        height: .1rem;
+    `
+
+    const buttonText = expandCard ? "(Hide) Act Now" : "Act Now"
 
     return(
         <Container>
             <CardTitle>More Ways to Save the Planet</CardTitle>
             <CardText>Making a green house is only the start! Check out more ways to fight climate change and save the world!</CardText>
-            <Button onClick={() => setExpandCard(!expandCard)}>Act Now</Button>
-            { expandCard && <MoreInfo /> } 
+            { expandCard && 
+                <>
+                    <Spacer></Spacer>
+                    <MoreActionInfo moreInfo={cardGetInvolved} />
+                </>
+             } 
+            <Button onClick={() => setExpandCard(!expandCard)}>{buttonText}</Button>
         </Container>
     )
 };
