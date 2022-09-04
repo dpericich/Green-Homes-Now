@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const QuestionChoice = ({ question }) => {
+    const [checked0, setChecked0] = useState(false);
+    const [checked1, setChecked1] = useState(false);
+    const [checked2, setChecked2] = useState(false);
+    const [checked3, setChecked3] = useState(false);
+
+    const checks = [checked0, checked1, checked2, checked3];
+    
     const Container = styled.div`
         display: flex;
         flex-direction: column;
@@ -41,14 +48,37 @@ const QuestionChoice = ({ question }) => {
         }
     `
 
-    // Need to verify that this is radio so I can't have multiple elements
+    const updateChecked = async (index, value) => {
+        await setChecked0(false);
+        await setChecked1(false);
+        await setChecked2(false);
+        await setChecked3(false);
+
+        // Call callback hook here to set the value for the App.js question state
+
+        if (index === 0) {
+            setChecked0(true);
+        } else if (index === 1) {
+            setChecked1(true);
+        } else if (index === 2) {
+            setChecked2(true)
+        } else {
+            setChecked3(true)
+        };
+    }
 
     return(
         <Container>
             <QuestionText>{question.question.text}</QuestionText>
-            {question.answers.map(answer => (
+            {question.answers.map((answer, index) => (
                 <AnswerContainer>
-                    <AnswerInput type="checkbox" value={answer.value}></AnswerInput>
+                    <AnswerInput 
+                        type="checkbox" 
+                        value={answer.value}
+                        idx={index}
+                        checked={checks[index]}
+                        onChange={() => updateChecked(index, answer.value)}
+                    />
                     <AnswerText>{answer.text}</AnswerText>
                 </AnswerContainer>
             ))}
