@@ -1,53 +1,39 @@
-// I will store the information for the questions follow up and
-// the information for the other cards in this file.
-// The naive expectation is that this will allow me to use a single card -> potentially not though
-
-// This one will be difficult as I will need to match / render based on the score and state of the quiz
-// My other option is just to have all of the questions shown and follow up text below
 export const questionFeedback = [
     {
-        name: "When did you last change your AC's air filter?",
-        text: "This is placeholder information that will expand further about the original question listed above. It is important, whether the user had the 'correct' answer or not to give them more information. If nothing else that get the why to their what."
+        name: "When did you last change your air conditioner's air filter?",
+        text: "Changing your AC's air filter on a monthly basis is important to prevent buildup on the filter. When the filter is dirty the AC will have to cycle on more frequently and for longer periods to get enough air to cool your house."
     },
     {
-        name: "Placeholder for oringinal question, more to come later.",
-        text: "This is placeholder information that will expand further about the original question listed above. It is important, whether the user had the 'correct' answer or not to give them more information. If nothing else that get the why to their what."
+        name: "Do you have separate bins for trash, recycling and compost?",
+        text: "Everything that goes to a landfill is lost, but by separating reclaimable items we give new opportunities to materials. In some cases recycling can lead to less energy being needed to recreate products, or create new byproducts."
     },
     {
-        name: "Placeholder for oringinal question, more to come later.",
-        text: "This is placeholder information that will expand further about the original question listed above. It is important, whether the user had the 'correct' answer or not to give them more information. If nothing else that get the why to their what."
+        name: "Are all of the light bulbs in your home LEDs?",
+        text: "LED lightbulbs have been shown to be 80% more efficient than traditional lightbulbs. They also have a better distribution of light so you need less and have a lifespan of up to six times traditional bulbs."
     },
     {
-        name: "Placeholder for oringinal question, more to come later.",
-        text: "This is placeholder information that will expand further about the original question listed above. It is important, whether the user had the 'correct' answer or not to give them more information. If nothing else that get the why to their what."
+        name: "Do you have energy efficient windows?",
+        text: "A major area of energy loss comes through our home's windows. Installing dual and triple paned windows can reduce heat loss as can windows with 'invisible' coating or tints."
     },
     {
-        name: "Placeholder for oringinal question, more to come later.",
-        text: "This is placeholder information that will expand further about the original question listed above. It is important, whether the user had the 'correct' answer or not to give them more information. If nothing else that get the why to their what."
+        name: "Do you always wash your clothes with hot water?",
+        text: "You should always try to wash your clothes in cold water. According to Enery Star, 90% of the energy used by washing machines goes towards heating water."
     },
     {
-        name: "Placeholder for oringinal question, more to come later.",
-        text: "This is placeholder information that will expand further about the original question listed above. It is important, whether the user had the 'correct' answer or not to give them more information. If nothing else that get the why to their what."
+        name: "Can you see light coming into your home around exterior door frames or windows?",
+        text: "As our homes age, their frames shift. This can lead to gaps between windows and doors and their frames. These gaps lead to lost heating and cooling which means more energy to keep your home comfortable. You can fix this by replacing windows, leveling frames and even using doormats or towels to close gaps."
     },
     {
-        name: "Placeholder for oringinal question, more to come later.",
-        text: "This is placeholder information that will expand further about the original question listed above. It is important, whether the user had the 'correct' answer or not to give them more information. If nothing else that get the why to their what."
+        name: "Do you use smart power strips for your electronics?",
+        text: "Leaving your electronics plugged in, even while off, comes at a cost. Phantom power is the power used by electronics that are plugged in and not in use and can use a lot of electricity. By using smart power strips, you can prevent devices from using extra electricity."
     },
     {
-        name: "Placeholder for oringinal question, more to come later.",
-        text: "This is placeholder information that will expand further about the original question listed above. It is important, whether the user had the 'correct' answer or not to give them more information. If nothing else that get the why to their what."
+        name: "Do you regularly have an empty fridge?",
+        text: "Having an empty fridge uses more energy than a full fridge. The less items in your fridge, the more open space the fridge has to cool off. Buy a pack of water bottles and place them in your fridge between grocery trips to ensure you're not cooling empty space."
     },
     {
-        name: "Placeholder for oringinal question, more to come later.",
-        text: "This is placeholder information that will expand further about the original question listed above. It is important, whether the user had the 'correct' answer or not to give them more information. If nothing else that get the why to their what."
-    },
-    {
-        name: "Placeholder for oringinal question, more to come later.",
-        text: "This is placeholder information that will expand further about the original question listed above. It is important, whether the user had the 'correct' answer or not to give them more information. If nothing else that get the why to their what."
-    },
-    {
-        name: "Placeholder for oringinal question, more to come later.",
-        text: "This is placeholder information that will expand further about the original question listed above. It is important, whether the user had the 'correct' answer or not to give them more information. If nothing else that get the why to their what."
+        name: "Do you run your dish washer empty or during the day?",
+        text: "Running your dishwasher near empty wastes water intended for a full load. By running your dishwasher at night you avoid peak grid demand, and may see cheaper rates for the dishwasher's electricty too!"
     },
 ]
 
