@@ -43,7 +43,7 @@ const App = () => {
   return (
 
     <div className="App">
-      <Header />
+      <Header scrollToTop={stage3} />
       <div className="Body">
         { loading && <Loading />}
         { stage1 && <IntroPage moveToQuiz={moveToQuiz} /> }
