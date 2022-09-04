@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import QuestionChoice from './QuestionChoice';
 import { questions } from '../data/questions';
 
-const QuizPage = ({ moveToResults, disableQuizSubmit }) => {
+const QuizPage = ({ moveToResults, disableQuizSubmit, questionSetters, selectedIndexValues, selectedIndexSetters }) => {
     const Container = styled.div`
         display: flex;
         flex-direction: column;
@@ -70,8 +70,14 @@ const QuizPage = ({ moveToResults, disableQuizSubmit }) => {
     return(
         <Container>
             <QuizPageTitle>Make Your Home Green!</QuizPageTitle>
-            {questions.map(question => (
-                <QuestionChoice question={question}></QuestionChoice>
+            {questions.map((question, idx) => (
+                <QuestionChoice 
+                    question={question} 
+                    questionSetters={questionSetters} 
+                    questionIndex={idx} 
+                    selectedIndexValues={selectedIndexValues} 
+                    selectedIndexSetters={selectedIndexSetters}
+                />
             ))}
             { disableQuizSubmit && <DisabledSubmitButton>Submit</DisabledSubmitButton> } 
             { !disableQuizSubmit && <SubmitQuizButton onClick={moveToResults}>Submit</SubmitQuizButton> } 
