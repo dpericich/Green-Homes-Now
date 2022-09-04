@@ -16,6 +16,8 @@ There are a lot of things that we can do to lessen the amount of electricity we 
 
 What is this app? This app is a quiz app that allows users to get feedback on how green their home and home habits are. Along with getting a rating of how they are doing, the app offers information and tips for areas that may have been lacking. The goal is to bring awareness of good habits to build for each user who takes this quiz.
 
+For this app I used React with styled-components to build the front end. I deployed using GithubPages and got the domain from domain.com. I thought about adding a Node backend, but there was no reason to spin up a server if I didn't plan to persist the quiz results or serve more than a simple SPA.
+
 ## Spread the Word
 
 One of my main goals, beyond informing, with this app was to create something that is very easy to share. Some of the things I've done to allow for this are:
