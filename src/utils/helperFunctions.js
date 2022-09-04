@@ -1,3 +1,7 @@
-export const calculateQuizScore = () => {
-    // This will likely take a list of values and return an integer
+export const calculateQuizScore = (array) => {
+    const POSSIBLE_POINTS = 36;
+    const sum = array.reduce((cv, ac) => ac += cv, 0)
+    const score = Math.round((sum / POSSIBLE_POINTS) * 5)
+
+    return score;
 }
