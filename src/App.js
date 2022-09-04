@@ -24,16 +24,6 @@ const App = () => {
   const [question7, setQuestion7] = useState(null);
   const [question8, setQuestion8] = useState(null);
   const [question9, setQuestion9] = useState(null);
-
-  // const [selectedIndex1, setSelectedIndex1] = useState(false);
-  // const [selectedIndex2, setSelectedIndex2] = useState(false);
-  // const [selectedIndex3, setSelectedIndex3] = useState(false);
-  // const [selectedIndex4, setSelectedIndex4] = useState(false);
-  // const [selectedIndex5, setSelectedIndex5] = useState(false);
-  // const [selectedIndex6, setSelectedIndex6] = useState(false);
-  // const [selectedIndex7, setSelectedIndex7] = useState(false);
-  // const [selectedIndex8, setSelectedIndex8] = useState(false);
-  // const [selectedIndex9, setSelectedIndex9] = useState(false);
   
   const [selectedIndex1, setSelectedIndex1] = useState({0: false, 1: false, 2: false, 3: false});
   const [selectedIndex2, setSelectedIndex2] = useState({0: false, 1: false, 2: false, 3: false});
@@ -46,7 +36,6 @@ const App = () => {
   const [selectedIndex9, setSelectedIndex9] = useState({0: false, 1: false, 2: false, 3: false});
 
   const selectedIndexValues = [selectedIndex1, selectedIndex2, selectedIndex3, selectedIndex4, selectedIndex5, selectedIndex6, selectedIndex7, selectedIndex8, selectedIndex9];
-  console.log(selectedIndexValues)
 
   const questionSetters = {
     0: function(value) { setQuestion1(value) },
@@ -71,8 +60,6 @@ const App = () => {
     7: function(value) { setSelectedIndex8(value) },
     8: function(value) { setSelectedIndex9(value) },
   }
-
-  console.log([question1, question2, question3, question4, question5, question6, question7, question8, question9])
 
   const [score, setScore] = useState(0);
   const [disableQuizSubmit, setDisableQuizSubmit] = useState(true);
