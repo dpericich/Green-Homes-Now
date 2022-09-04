@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import QuestionChoice from './QuestionChoice';
 import { questions } from '../data/questions';
 
-const QuizPage = ({ moveToResults }) => {
+const QuizPage = ({ moveToResults, disableQuizSubmit }) => {
     const Container = styled.div`
         display: flex;
         flex-direction: column;
@@ -29,6 +29,7 @@ const QuizPage = ({ moveToResults }) => {
     const QuizPageTitle = styled.h3`
         color: white;
         font-size: 3rem;
+        margin: 1rem 0 2rem;
     `
 
     const SubmitQuizButton = styled.div`
@@ -53,13 +54,27 @@ const QuizPage = ({ moveToResults }) => {
             transform: scale(0.98);
         }
     `
+
+    const DisabledSubmitButton = styled.div`
+        background-color: black;
+        font-size: 1.7rem;
+        color: white;
+        width: 14rem;
+        text-align: center;
+        margin-top: 1.3rem;
+        padding: 1.5rem 0;
+        border-radius: 5px;
+        box-shadow: 3px 3px rgba(255,255,255, 0.6);
+        cursor: no-drop;
+    `
     return(
         <Container>
             <QuizPageTitle>Make Your Home Green!</QuizPageTitle>
             {questions.map(question => (
                 <QuestionChoice question={question}></QuestionChoice>
             ))}
-            <SubmitQuizButton onClick={moveToResults}>Submit</SubmitQuizButton>
+            { disableQuizSubmit && <DisabledSubmitButton>Submit</DisabledSubmitButton> } 
+            { !disableQuizSubmit && <SubmitQuizButton onClick={moveToResults}>Submit</SubmitQuizButton> } 
         </Container>
     )
 };
