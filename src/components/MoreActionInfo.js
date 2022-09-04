@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const MoreActionInfo = ({ moreInfo }) => {
     const Container = styled.div`
         text-align: left;
+        width: 90%;
 
         @media screen and (max-width: 600px) {
             width: 90%

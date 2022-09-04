@@ -54,18 +54,18 @@ export const questionFeedback = [
 // Have a card that links to other organizations
 export const cardGetInvolved = [
     {
-        name: "Placeholder Text",
-        text: "This is what this organization does. It impacts x by doing y, really well.",
-        link: "https://example.com"
+        name: "Fibershed",
+        text: "Fibershed focuses on creating an international system of diverse textile communite in order to enhance regional economies. This system leads to climate friendly agriculture and the revitalization of local manufacturing to support fiber and garment production.",
+        link: "https://fibershed.org/"
     },
     {
-        name: "Placeholder Text",
-        text: "This is what this organization does. It impacts x by doing y, really well.",
-        link: "https://example.com"
+        name: "Eden Reforestation Projects",
+        text: "The Eden Reforestation Projects focuses on sustainable sustainability by partnering with local communities to care for and grow forests. They employ and empower people to produce, plant and protect millions of trees every month.",
+        link: "https://www.edenprojects.org/"
     },
     {
-        name: "Placeholder Text",
-        text: "This is what this organization does. It impacts x by doing y, really well.",
-        link: "https://example.com"
+        name: "Jane Goodall Institute",
+        text: "Founded by famous female scientist, Jane Goodall, the institute focuses on broad nature conservation. This takes the form of anything from conservation projects, to preventing wildlife trafficking.",
+        link: "https://janegoodall.org/"
     }
 ]
