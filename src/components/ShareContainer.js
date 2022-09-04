@@ -12,7 +12,7 @@ const ShareContainer = () => {
         margin: 2rem;
         padding: 3rem 1.75rem;
         width: 70%;
-        box-shadow: 6px 6px 14px rgba(38, 215, 128, .6);
+        box-shadow: 6px 6px 14px rgba(255, 255, 255, .6);
         border-radius: 5px;
 
 
@@ -49,6 +49,7 @@ const ShareContainer = () => {
         padding: 1.5rem 0;
         border-radius: 5px;
         box-shadow: 3px 3px rgba(0,0,0, 0.15);
+        margin-top: .9rem;
 
         &:active {
             transform: translateY(10px);
