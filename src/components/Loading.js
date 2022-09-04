@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
 const Loading = () => {
+    const [loadingText, setLoadingText] = useState("Loading")
+
     const LoadingContainer = styled.div`
         display: flex;
         flex-direction: column;
@@ -29,11 +31,17 @@ const Loading = () => {
         margin: 0;
     `
 
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setLoadingText(loadingText + '.')
+        }, 260)
+    }, [loadingText])
+
 
     return(
         <LoadingContainer>
             <Logo src="android-chrome-512x512.png" />
-            <LoadingText>Loading...</LoadingText>
+            <LoadingText>{loadingText}</LoadingText>
         </LoadingContainer>
     )
 };
