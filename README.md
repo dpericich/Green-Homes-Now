@@ -18,12 +18,12 @@ What is this app? This app is a quiz app that allows users to get feedback on ho
 
 ![Green Homes Now Screenshots](/public/three_screen_view.png)
 
-For this app I used React with styled-components to build the front end. I deployed using GithubPages and got the domain from domain.com. I thought about adding a Node backend, but there was no reason to spin up a server if I didn't plan to persist the quiz results or serve more than a simple SPA.
+For this app I used React with styled-components to build the front end. I deployed using Github Pages. I thought about adding a Node backend, but there was no reason to spin up a server if I didn't plan to persist the quiz results or serve more than a simple SPA.
 
 ## Spread the Word
 
 One of my main goals, beyond informing, with this app was to create something that is very easy to share. Some of the things I've done to allow for this are:
 
-1. Create a button that allows users to click a button to copy the url to their clipboard.
-2. Make the link and thumbnail visually appealing to make users feel safer about sharing and opening it.
-3. Focus on a short list of universally applicable and impactful behaviors to change.
+1. Created a button that allows users to with a click of a button to copy the url to their clipboard.
+2. Made the link and thumbnail visually appealing to make users feel safer about sharing and opening it.
+3. Focused on a short list of universally applicable and impactful behaviors to change.
